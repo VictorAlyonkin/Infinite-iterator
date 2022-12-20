@@ -5,14 +5,14 @@ import java.util.function.Consumer;
 
 public class Randoms implements Iterable<Integer> {
     protected Random random;
-    private int min, max;
+    private int min;
+    private int max;
 
     public Randoms(int min, int max) {
         this.random = new Random();
         this.min = min;
         this.max = max;
     }
-
 
     @Override
     public Iterator<Integer> iterator() {
